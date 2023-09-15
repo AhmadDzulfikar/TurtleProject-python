@@ -12,8 +12,8 @@ turtle.title('Lab 02')
 n = int(turtle.textinput("Lab 02", "The number of sides: "))
 # the length of a side is getting shorter as n getting larger
 # When n = 4, the length of a side is 100.
-panjang_sisi = 400/n
-sudut_interior = 180 * (n - 2) / n
+side_length = 400/n
+interior = 180 * (n - 2) / n
 
 # get the value of red color from user
 r = float(turtle.textinput("Lab 02",
@@ -31,8 +31,8 @@ polygon.up()
 polygon.goto(-180,0)
 polygon.down()
 for p in range(n):
-    polygon.forward(panjang_sisi)
-    polygon.left(180 - sudut_interior) 
+    polygon.forward(side_length)
+    polygon.left(180 - interior) 
 
 # create the color from rgb values given by user
 turtle.color(r,g,b)
@@ -46,8 +46,8 @@ polygon.color(r,g,b)
 polygon.begin_fill()
 # polygon.color("green")
 for p in range(n):
-    polygon.forward(panjang_sisi)
-    polygon.left(180 - sudut_interior) 
+    polygon.forward(side_length)
+    polygon.left(180 - interior) 
 polygon.end_fill()
 
 # for exit
