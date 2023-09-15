@@ -30,3 +30,5 @@ turtle.forward(100)
 turtle.hideturtle()
 # wait for user to click on the screen to exit
 turtle.exitonclick()
+
+# Collabolator: chatGPT
